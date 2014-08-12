@@ -1,4 +1,4 @@
-Edison_Mezzanine_H-Bridge
-=========================
+Edison_Mezzanine_Base
+=====================
 
-Dual H-bridge Mezzanine for Edison
+Base Board for Edison Mezzanine stack
