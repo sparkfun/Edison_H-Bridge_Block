@@ -1927,7 +1927,6 @@ design rules under a new name.</description>
 <contactref element="U1" pad="3"/>
 <contactref element="U1" pad="18"/>
 <contactref element="U$1" pad="P$15"/>
-<contactref element="U$1" pad="P$6"/>
 <via x="13.208" y="32.131" extent="1-16" drill="0.508"/>
 <via x="11.557" y="32.131" extent="1-16" drill="0.508"/>
 <contactref element="C3" pad="2"/>
@@ -2725,6 +2724,8 @@ design rules under a new name.</description>
 <contactref element="C3" pad="1"/>
 <wire x1="18.415" y1="24.423" x2="18.415" y2="24.257" width="0.1778" layer="1"/>
 <wire x1="18.415" y1="24.257" x2="21.082" y2="21.59" width="0.1778" layer="1"/>
+<contactref element="U$1" pad="P$6"/>
+<wire x1="15.04" y1="24.5" x2="15.44" y2="24.5" width="0.1778" layer="1"/>
 </signal>
 <signal name="FW_RCVR">
 <wire x1="25.96" y1="9.38" x2="26.7642" y2="9.38" width="0.1524" layer="16"/>
