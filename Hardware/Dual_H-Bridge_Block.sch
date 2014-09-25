@@ -16112,7 +16112,7 @@ Various fiducial points for machine vision alignment.</description>
 <hole x="2.93" y="1.98" drill="2"/>
 </package>
 <package name="DF40C-70DP-0.4(51)">
-<circle x="7.3" y="1" radius="0.1" width="0.3048" layer="21"/>
+<circle x="7.7" y="1" radius="0.1" width="0.3048" layer="21"/>
 <wire x1="-8.4" y1="1.44" x2="8.4" y2="1.44" width="0.2032" layer="21"/>
 <wire x1="8.4" y1="1.44" x2="8.4" y2="-1.44" width="0.2032" layer="21"/>
 <wire x1="8.4" y1="-1.44" x2="-8.4" y2="-1.44" width="0.2032" layer="21"/>
@@ -16187,6 +16187,10 @@ Various fiducial points for machine vision alignment.</description>
 <smd name="68" x="-6.4" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
 <smd name="69" x="-6.8" y="1.32" dx="0.2" dy="1.14" layer="16"/>
 <smd name="70" x="-6.8" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC4" x="-7.2" y="1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC3" x="-7.2" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC1" x="7.2" y="1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC2" x="7.2" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
 </package>
 <package name="DF40-XC-(X.X)-70DS-0.4V(51)">
 <smd name="69" x="-6.8" y="1.32" dx="0.2" dy="1.14" layer="1"/>
@@ -18784,7 +18788,7 @@ Diode prevents current flow from VIN to VSYS</text>
 <instance part="GND5" gate="1" x="139.7" y="83.82"/>
 <instance part="SUPPLY1" gate="G$1" x="40.64" y="129.54"/>
 <instance part="SUPPLY2" gate="G$1" x="137.16" y="129.54"/>
-<instance part="U4" gate="U1" x="160.02" y="106.68" rot="R180"/>
+<instance part="U4" gate="U1" x="167.64" y="106.68" rot="R180"/>
 <instance part="GND6" gate="1" x="147.32" y="83.82"/>
 <instance part="SUPPLY3" gate="G$1" x="149.86" y="129.54"/>
 <instance part="SUPPLY4" gate="G$1" x="185.42" y="129.54"/>
@@ -18848,6 +18852,7 @@ Diode prevents current flow from VIN to VSYS</text>
 <wire x1="81.28" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
 <label x="83.82" y="88.9" size="1.27" layer="95" xref="yes"/>
+<junction x="81.28" y="88.9"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -18871,6 +18876,7 @@ Diode prevents current flow from VIN to VSYS</text>
 <wire x1="81.28" y1="134.62" x2="78.74" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="129.54" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
 <label x="83.82" y="129.54" size="1.27" layer="95" xref="yes"/>
+<junction x="81.28" y="129.54"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -18925,6 +18931,7 @@ Diode prevents current flow from VIN to VSYS</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
+<wire x1="154.94" y1="109.22" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="109.22" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="U4" gate="U1" pin="GND"/>
@@ -18950,35 +18957,35 @@ Diode prevents current flow from VIN to VSYS</text>
 <pinref part="U1" gate="G$1" pin="STBY"/>
 <wire x1="134.62" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="109.22" x2="144.78" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="111.76" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="111.76" x2="154.94" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="B5"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="BIN1"/>
-<wire x1="134.62" y1="104.14" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="B4"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="BIN2"/>
-<wire x1="134.62" y1="101.6" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="101.6" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="B3"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="AIN1"/>
-<wire x1="147.32" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="B6"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="AIN2"/>
-<wire x1="134.62" y1="116.84" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="116.84" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="B7"/>
 </segment>
 </net>
@@ -19008,7 +19015,7 @@ Diode prevents current flow from VIN to VSYS</text>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
-<wire x1="147.32" y1="106.68" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="106.68" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="106.68" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VIN"/>
 <pinref part="U4" gate="U1" pin="VCCB"/>
@@ -19032,26 +19039,26 @@ Diode prevents current flow from VIN to VSYS</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PWMB"/>
-<wire x1="134.62" y1="99.06" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="B2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PWMA"/>
-<wire x1="134.62" y1="119.38" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="119.38" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="B8"/>
 </segment>
 </net>
 <net name="1.8V" class="0">
 <segment>
-<wire x1="172.72" y1="106.68" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="106.68" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="106.68" x2="185.42" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="1.8V"/>
 <pinref part="U4" gate="U1" pin="VCCA"/>
 <pinref part="U4" gate="U1" pin="OE"/>
 <wire x1="185.42" y1="109.22" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="109.22" x2="185.42" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="109.22" x2="185.42" y2="109.22" width="0.1524" layer="91"/>
 <junction x="185.42" y="109.22"/>
 </segment>
 <segment>
@@ -19063,49 +19070,49 @@ Diode prevents current flow from VIN to VSYS</text>
 <net name="GP13_PWM1" class="0">
 <segment>
 <label x="190.5" y="99.06" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="172.72" y1="99.06" x2="190.5" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="99.06" x2="190.5" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="A2"/>
 </segment>
 </net>
 <net name="GP12_PWM0" class="0">
 <segment>
 <label x="187.96" y="119.38" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="172.72" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="A8"/>
 </segment>
 </net>
 <net name="GP14" class="0">
 <segment>
 <label x="190.5" y="101.6" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="172.72" y1="101.6" x2="190.5" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="101.6" x2="190.5" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="A3"/>
 </segment>
 </net>
 <net name="GP15" class="0">
 <segment>
 <label x="190.5" y="104.14" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="172.72" y1="104.14" x2="190.5" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="104.14" x2="190.5" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="A4"/>
 </segment>
 </net>
 <net name="GP49" class="0">
 <segment>
 <label x="187.96" y="111.76" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="172.72" y1="111.76" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="111.76" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="A5"/>
 </segment>
 </net>
 <net name="GP48" class="0">
 <segment>
 <label x="187.96" y="114.3" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="172.72" y1="114.3" x2="187.96" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="114.3" x2="187.96" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="A6"/>
 </segment>
 </net>
 <net name="GP47" class="0">
 <segment>
 <label x="187.96" y="116.84" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="172.72" y1="116.84" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="116.84" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="A7"/>
 </segment>
 </net>
@@ -19133,6 +19140,7 @@ Diode prevents current flow from VIN to VSYS</text>
 <wire x1="68.58" y1="93.98" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+<junction x="68.58" y="88.9"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -19145,6 +19153,7 @@ Diode prevents current flow from VIN to VSYS</text>
 <wire x1="68.58" y1="134.62" x2="71.12" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="129.54" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
+<junction x="68.58" y="129.54"/>
 </segment>
 </net>
 </nets>
