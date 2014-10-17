@@ -2991,7 +2991,6 @@ design rules under a new name.</description>
 <contactref element="U4" pad="5"/>
 <contactref element="C3" pad="1"/>
 <contactref element="U4" pad="6"/>
-<wire x1="14.108" y1="15.294" x2="14.108" y2="15.694" width="0.1778" layer="1"/>
 <wire x1="14.108" y1="15.694" x2="13.4652" y2="15.694" width="0.1524" layer="1"/>
 <wire x1="13.4652" y1="15.694" x2="13.3604" y2="15.7988" width="0.1524" layer="1"/>
 <wire x1="17.9696" y1="22.7076" x2="14.058" y2="18.796" width="0.1524" layer="1"/>
@@ -3004,6 +3003,12 @@ design rules under a new name.</description>
 <wire x1="19.5326" y1="22.7076" x2="17.9696" y2="22.7076" width="0.1524" layer="1"/>
 <wire x1="13.3604" y1="15.7988" x2="13.3604" y2="18.0984" width="0.1524" layer="1"/>
 <wire x1="13.3604" y1="18.0984" x2="14.058" y2="18.796" width="0.1524" layer="1"/>
+<wire x1="14.108" y1="15.294" x2="14.8622" y2="15.294" width="0.1778" layer="1"/>
+<wire x1="14.8622" y1="15.294" x2="14.9606" y2="15.3924" width="0.1778" layer="1"/>
+<wire x1="14.9606" y1="15.3924" x2="14.9606" y2="15.5956" width="0.1778" layer="1"/>
+<wire x1="14.9606" y1="15.5956" x2="14.859" y2="15.6972" width="0.1778" layer="1"/>
+<wire x1="14.859" y1="15.6972" x2="14.1112" y2="15.6972" width="0.1778" layer="1"/>
+<wire x1="14.1112" y1="15.6972" x2="14.108" y2="15.694" width="0.1778" layer="1"/>
 </signal>
 <signal name="FW_RCVR">
 <wire x1="25.96" y1="9.38" x2="26.7642" y2="9.38" width="0.1524" layer="16"/>
