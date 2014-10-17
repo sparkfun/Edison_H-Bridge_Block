@@ -138,7 +138,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S" xrefpart="1_/%S.%C%R">
+<schematic xreflabel="%F%N/%S" xrefpart="/%S.%C%R">
 <libraries>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
@@ -18953,7 +18953,6 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="U4" library="Testing" deviceset="TXB0108" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="1.8V" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="10UF-16V-10%(TANT)" device="" value="10uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
@@ -18998,7 +18997,6 @@ Diode prevents current flow from VIN to VSYS</text>
 <instance part="SUPPLY2" gate="G$1" x="137.16" y="129.54"/>
 <instance part="U4" gate="U1" x="167.64" y="106.68" rot="R180"/>
 <instance part="GND6" gate="1" x="147.32" y="83.82"/>
-<instance part="SUPPLY3" gate="G$1" x="149.86" y="129.54"/>
 <instance part="SUPPLY4" gate="G$1" x="185.42" y="129.54"/>
 <instance part="C1" gate="G$1" x="17.78" y="106.68"/>
 <instance part="C2" gate="G$1" x="7.62" y="104.14"/>
@@ -19210,23 +19208,13 @@ Diode prevents current flow from VIN to VSYS</text>
 <wire x1="137.16" y1="93.98" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VM3"/>
 <wire x1="137.16" y1="96.52" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="96.52" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="96.52" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VM1"/>
-<wire x1="137.16" y1="111.76" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="121.92" x2="134.62" y2="121.92" width="0.1524" layer="91"/>
 <junction x="137.16" y="96.52"/>
 <wire x1="137.16" y1="121.92" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
 <junction x="137.16" y="121.92"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
-<wire x1="134.62" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
-<junction x="137.16" y="111.76"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
-</segment>
-<segment>
-<wire x1="154.94" y1="106.68" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="106.68" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="G$1" pin="VIN"/>
-<pinref part="U4" gate="U1" pin="VCCB"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -19336,6 +19324,17 @@ Diode prevents current flow from VIN to VSYS</text>
 <pinref part="SJ1" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="66.04" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
 <label x="139.7" y="66.04" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="U1" pin="VCCB"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="134.62" y1="111.76" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="111.76" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="106.68" x2="154.94" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="111.76" x2="142.24" y2="127" width="0.1524" layer="91"/>
+<junction x="142.24" y="111.76"/>
+<wire x1="142.24" y1="127" x2="149.86" y2="127" width="0.1524" layer="91"/>
+<label x="149.86" y="127" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
